@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#111d35"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
+<title>Vôlei Manager</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"><link rel="stylesheet" href="style.css"></head>
+<body class="clean-ui">
+<div class="app">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><img src="KarolMell_logo_volei.png" alt="KarolMell - Vôlei" class="brand-logo"></div>
+ <div class="nav-label">MENU PRINCIPAL</div>
+<button class="nav active" data-page="inicio"><span class="nav-ico"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9M9 21v-7h6v7"/></svg></span><span>Início</span></button>
+<button class="nav" data-page="placar"><span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M4 20V4M4 20h17"/><rect x="7" y="12" width="3" height="6" rx="1"/><rect x="13" y="8" width="3" height="10" rx="1"/><rect x="19" y="5" width="3" height="13" rx="1"/></svg></span><span>Placar e sets</span></button>
+<button class="nav" data-page="quadra"><span class="nav-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M15 9v11"/></svg></span><span>Quadra e rotação</span></button>
+<button class="nav" data-page="sorteio"><span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></span><span>Sorteio de jogos</span></button>
+<button class="nav" data-page="montar"><span class="nav-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/></svg></span><span>Montar time</span></button>
+<button class="nav" data-page="jogadores"><span class="nav-ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21v-2a7 7 0 0 1 14 0v2M16 4a4 4 0 0 1 0 8m2 3a6 6 0 0 1 4 6v2"/></svg></span><span>Jogadores</span></button>
+<button class="nav" data-page="historico"><span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l4 2"/></svg></span><span>Histórico</span></button>
+<button class="nav" data-page="carteira"><span class="nav-ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 8h18M16 14h2"/></svg></span><span>Carteira</span></button>
+<button class="nav" data-page="regras"><span class="nav-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.7a8 8 0 0 1-1.8 1l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.7-1.4-2.4 1.4-1.1a7 7 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.7a8 8 0 0 1 1.8-1l.3-1.8h2.8l.3 1.8a8 8 0 0 1 1.8 1l1.7-.7 1.4 2.4-1.4 1.1a7 7 0 0 1 0 2Z"/></svg></span><span>Regras</span></button>
+<button class="nav" data-page="torneio"><span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H3v2a4 4 0 0 0 4 4M17 6h4v2a4 4 0 0 1-4 4"/></svg></span><span>Torneio</span></button>
+<button class="nav" data-page="apostas"><span class="nav-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 8.5c-.7-.7-1.6-1-3-1-1.7 0-3 .8-3 2s1.3 1.7 3 2 3 1 3 2-1.3 2-3 2c-1.4 0-2.4-.3-3-1M12 5v14"/></svg></span><span>Bolão</span></button>
+<button class="nav" data-page="cores"><span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 0-4h-1a2 2 0 0 1 0-4h4a5 5 0 0 0 5-5 9 9 0 0 0-9-5Z"/><circle cx="7" cy="10" r="1"/><circle cx="11" cy="7" r="1"/><circle cx="16" cy="9" r="1"/></svg></span><span>Cores dos times</span></button>
+<button class="nav" data-page="exportar"><span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M12 15V3m-5 5 5-5 5 5M4 14v6h16v-6"/></svg></span><span>Exportar / compartilhar</span></button> 
+<div class="side-foot">Organize sua partida<br><strong>Vôlei Manager</strong></div>
+</aside>
+<div class="mobilebar"><button id="menuToggle" aria-label="Abrir menu" aria-expanded="false" type="button">☰</button><strong class="mobile-brand"><img src="KarolMell_logo_volei.png" alt="KarolMell - Vôlei"></strong><a class="ig-link" href="https://www.instagram.com/_gabrielyuri70?mdxt=a2V1NnNqb3Jua3h6" target="_blank" rel="noopener noreferrer" aria-label="Instagram @_gabrielyuri70" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a><button id="walletTopShortcut" class="wallet-top-shortcut" type="button" onclick="goPage('carteira')" aria-label="Abrir carteira"><span class="wallet-svg"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 8h18M16 14h2"/></svg></span><small id="walletTopBalance">R$ 0,00</small></button></div><div id="menuBackdrop" class="menu-backdrop"></div>
+<main class="main">
+<header class="pagehead"><span class="ph-ico" id="pageIcon" aria-hidden="true"></span><div class="ph-text"><span class="eyebrow" id="pageEyebrow">KAROLMELL • VÔLEI</span><h1 id="pageTitle">Montar times</h1><p id="pageSubtitle">Cadastre jogadores e organize sua partida.</p></div><div class="head-actions"><a class="ig-link" href="https://www.instagram.com/_gabrielyuri70?mdxt=a2V1NnNqb3Jua3h6" target="_blank" rel="noopener noreferrer" aria-label="Instagram @_gabrielyuri70" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a><span class="status">● Pronto para jogar</span></div></header>
+
+<section class="page active" id="page-inicio">
+ <div class="home-intro"><div><h2>Vamos jogar?</h2><p>Escolha uma função para começar.</p></div><div class="now-chip" id="homeNow"></div></div>
+ <div class="panel podium-panel"><div class="podium-head"><div><h2>🏆 Pódio das equipes</h2><p id="podiumSub">Quem mais venceu</p></div><div class="seg" id="podiumScope"><button type="button" data-scope="hoje">Hoje</button><button type="button" data-scope="tudo" class="active">Tudo</button></div></div><div id="podiumBox" class="podium"></div></div>
+ <div class="panel home-menu-panel"><div class="home-menu-grid" id="homeMenuGrid">
+  <button class="home-tile" onclick="goPage('montar')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/></svg></span><span>Montar times</span></button>
+  <button class="home-tile" onclick="goPage('jogadores')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21v-2a7 7 0 0 1 14 0v2M16 4a4 4 0 0 1 0 8m2 3a6 6 0 0 1 4 6v2"/></svg></span><span>Jogadores</span></button>
+  <button class="home-tile" onclick="goPage('placar')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><path d="M4 20V4M4 20h17"/><rect x="7" y="12" width="3" height="6" rx="1"/><rect x="13" y="8" width="3" height="10" rx="1"/><rect x="19" y="5" width="3" height="13" rx="1"/></svg></span><span>Placar e sets</span></button>
+  <button class="home-tile" onclick="goPage('quadra')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M15 9v11"/></svg></span><span>Quadra</span></button>
+  <button class="home-tile" onclick="goPage('sorteio')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></span><span>Sorteio de jogos</span></button>
+  <button class="home-tile" onclick="goPage('carteira')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 8h18M16 14h2"/></svg></span><span>Carteira</span></button>
+  <button class="home-tile" onclick="goPage('apostas')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 8.5c-.7-.7-1.6-1-3-1-1.7 0-3 .8-3 2s1.3 1.7 3 2 3 1 3 2-1.3 2-3 2c-1.4 0-2.4-.3-3-1M12 5v14"/></svg></span><span>Bolão</span></button>
+  <button class="home-tile" onclick="goPage('torneio')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H3v2a4 4 0 0 0 4 4M17 6h4v2a4 4 0 0 1-4 4"/></svg></span><span>Torneio</span></button>
+  <button class="home-tile home-extra" onclick="goPage('regras')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="m19 15 2 1-2 3-2-1a8 8 0 0 1-2 1l-.3 2h-3l-.3-2a8 8 0 0 1-2-1l-2 1-2-3 2-1a8 8 0 0 1 0-2l-2-1 2-3 2 1a8 8 0 0 1 2-1l.3-2h3l.3 2a8 8 0 0 1 2 1l2-1 2 3-2 1a8 8 0 0 1 0 2Z"/></svg></span><span>Regras</span></button>
+  <button class="home-tile home-extra" onclick="goPage('cores')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 0-4h-1a2 2 0 0 1 0-4h4a5 5 0 0 0 5-5 9 9 0 0 0-9-5Z"/><circle cx="7" cy="10" r="1"/><circle cx="11" cy="7" r="1"/><circle cx="16" cy="9" r="1"/></svg></span><span>Cores dos times</span></button>
+  <button class="home-tile home-extra" onclick="goPage('exportar')"><span class="home-tile-icon"><svg viewBox="0 0 24 24"><path d="M12 15V3m-5 5 5-5 5 5M4 14v6h16v-6"/></svg></span><span>Exportar / compartilhar</span></button>
+ </div><button class="home-show-more" id="homeShowMore" type="button" aria-expanded="false" onclick="toggleHomeMore()">＋ Mostrar mais opções</button></div>
+ <div class="home-summary"><div class="home-summary-head"><div><h3>Resumo da partida</h3><p>Seus dados em um só lugar.</p></div></div><div class="dashboard-stats"><article class="dash-card"><small>Times formados</small><strong id="dashTeams">0</strong></article><article class="dash-card"><small>Jogadores cadastrados</small><strong id="dashPlayers">0</strong></article><article class="dash-card"><small>Masculinos</small><strong id="dashMen">0</strong></article><article class="dash-card"><small>Femininos</small><strong id="dashWomen">0</strong></article></div></div>
+ <div class="dashboard-panels"><div class="panel"><div class="panel-title"><div><h2>Resultado da partida</h2><p>Melhor desempenho atual</p></div></div><div id="dashWinner" class="dash-highlight">Ainda não há placar registrado.</div><button class="btn light full" type="button" onclick="goPage('placar')">Abrir placar</button></div><div class="panel"><div class="panel-title"><div><h2>Resumo do elenco</h2><p>Informações rápidas</p></div></div><div class="dash-rows"><div>Levantadores <b id="dashSetters">0</b></div><div>Jogadores disponíveis <b id="dashAvailable">0</b></div><div>Sets registrados <b id="dashSets">0</b></div></div></div></div>
+</section>
+<section class="page" id="page-montar"><div class="acc-list">
+<details class="acc" id="acc1"><summary><span class="acc-num">1</span><span class="acc-t"><b>Regras do sorteio</b><small id="accSub1"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><label>Homens por time</label><input type="number" id="menPerTeamHome" min="0" max="20" placeholder="Sem limite fixo">
+  <label>Mulheres por time</label><input type="number" id="womenPerTeamHome" min="0" max="20" placeholder="Sem limite fixo">
+  <label>Total de jogadores por time (opcional)</label><input type="number" id="playersPerTeamHome" min="1" max="20" placeholder="Automático pela soma">
+  <label>Levantadores por time</label><input type="number" id="settersPerTeamHome" min="0" max="6" placeholder="Ex.: 1 (opcional)">
+  <p class="muted">Deixe em branco para não limitar. Exemplo: 2 homens + 4 mulheres = 6 jogadores por time.</p>
+  <label class="check"><input type="checkbox" id="balanceLevels" checked> Equilibrar times por nível</label>
+  </div></details>
+<details class="acc" id="acc2"><summary><span class="acc-num">2</span><span class="acc-t"><b>Adicionar jogadores</b><small id="accSub2"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><form id="playerForm">
+   <label>Nome completo</label><input id="playerName" placeholder="Ex.: Ana Souza" required maxlength="50">
+   <div class="two"><div><label>Gênero</label><select id="playerGender"><option value="Feminino">Feminino</option><option value="Masculino">Masculino</option><option value="Outro">Outro / não informar</option></select></div>
+   <div><label>Posição</label><select id="playerPosition"><option>Levantador</option><option>Ponteiro</option><option>Central</option><option>Oposto</option><option>Líbero</option><option>Outra</option></select></div></div>
+   <label>Nível (usado para equilibrar os times)</label><select id="playerLevel"><option value="1">★ Iniciante</option><option value="2">★★ Básico</option><option value="3" selected>★★★ Intermediário</option><option value="4">★★★★ Avançado</option><option value="5">★★★★★ Craque</option></select>
+   <button class="btn primary full">＋ Cadastrar jogador</button>
+  </form>
+  <details class="bulk"><summary>Adicionar vários de uma vez</summary><p class="muted">Um por linha. Formato: Nome, Gênero (F/M), Posição, Nível (1-5). Só o nome é obrigatório.</p><textarea id="bulkText" rows="5" placeholder="Ana, F, Levantador, 4&#10;Bruno, M, Central&#10;Carla"></textarea><button id="bulkAdd" class="btn light full" type="button">＋ Adicionar lista</button></details>
+  </div></details>
+<details class="acc" id="acc3"><summary><span class="acc-num">3</span><span class="acc-t"><b>Jogadores cadastrados</b><small id="accSub3"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><div class="list-head"><span class="count" id="playerCount">0</span><span class="muted">jogadores no total</span></div><input id="playerSearch" type="search" placeholder="🔎 Buscar jogador" class="search-box"><div class="presence-bar"><span id="presenceInfo"></span><div><button class="btn light mini" id="allPresent" type="button">Todos presentes</button><button class="btn light mini" id="nonePresent" type="button">Ninguém</button></div></div>
+  <div class="filters"><select id="filterGender"><option value="Todos">Todos os gêneros</option><option>Feminino</option><option>Masculino</option><option>Outro</option></select><select id="filterPosition"><option value="Todas">Todas posições</option><option>Levantador</option><option>Ponteiro</option><option>Central</option><option>Oposto</option><option>Líbero</option><option>Outra</option></select></div>
+  <div id="playersList" class="players-list"><div class="empty">Cadastre os primeiros jogadores.</div></div>
+ </div></details>
+<details class="acc" id="acc4"><summary><span class="acc-num">4</span><span class="acc-t"><b>Montagem dos times</b><small id="accSub4"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><label>Quantidade de times</label><select id="teamCount"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>8</option></select>
+  <div id="teamNames" class="teamnames"></div>
+  <button id="makeTeams" class="btn primary full">🎲 Sortear e montar times</button>
+  <button id="redraw" class="btn light full" type="button">🔁 Sortear de novo</button>
+  <button id="clearTeams" class="btn light full">Limpar times montados</button>
+  <button id="resetAll" class="btn light full danger-text">🗑 Apagar todos os dados salvos</button>
+ </div></details>
+<details class="acc" id="acc5"><summary><span class="acc-num">5</span><span class="acc-t"><b>Times formados</b><small id="accSub5"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><div class="list-head"><span class="count" id="teamBadge">0 times</span><button class="btn primary mini" id="shareTeamsImg" type="button">📸 Compartilhar times</button></div><p class="muted tip" id="swapTip">Dica: toque em um jogador e depois em outro de um time diferente para trocá-los de lugar.</p><div id="teamsOutput" class="teams-grid"><div class="empty">Os times aparecerão aqui após o sorteio.</div></div></div></details>
+</div></section>
+
+<section class="page" id="page-jogadores"><div class="panel"><div class="panel-title"><div><h2>Elenco completo</h2><p>Visualize os jogadores agrupados por gênero e posição.</p></div></div><div id="rosterSummary" class="summary-cards"></div><div id="rosterGroups"></div></div></section>
+
+<section class="page" id="page-regras"><div class="acc-list">
+<details class="acc"><summary><span class="acc-num">1</span><span class="acc-t"><b>Modo de jogo</b><small id="accRSub1"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><div class="mode-picker" id="modePicker" role="radiogroup" aria-label="Modo de jogo"><button type="button" data-mode="amistoso" class="active">🤝<b>Amistoso</b><small>Jogo normal</small></button><button type="button" data-mode="bolao">🏆<b>Bolão</b><small>Valor dividido</small></button><button type="button" data-mode="apostado">💰<b>Apostado</b><small>Vale dinheiro</small></button></div><p class="muted tip">O modo escolhido aparece em cada partida salva no histórico.</p><select id="gameMode" hidden><option value="amistoso">Amistoso</option><option value="bolao">Bolão</option><option value="apostado">Apostado</option></select></div></details>
+<details class="acc"><summary><span class="acc-num">2</span><span class="acc-t"><b>Composição dos times</b><small id="accRSub2"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><label>Quantidade de jogadores por time</label><input type="number" id="playersPerTeam" min="1" max="20" placeholder="Ex.: 6">
+<label>Homens por time</label><input type="number" id="menPerTeam" min="0" max="20" placeholder="Sem limite fixo">
+<label>Mulheres por time</label><input type="number" id="womenPerTeam" min="0" max="20" placeholder="Sem limite fixo">
+<label>Levantadores por time</label><input type="number" id="settersPerTeam" min="0" max="6" placeholder="Ex.: 1">
+<div class="notice">O sorteio tenta respeitar os limites de gênero e levantadores. Se o elenco não permitir, será exibido um aviso.</div></div></details>
+<details class="acc"><summary><span class="acc-num">3</span><span class="acc-t"><b>Observações</b><small id="accRSub3"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><label>Outras regras / observações</label><textarea id="otherRules" rows="4" placeholder="Ex.: pelo menos 2 jogadores iniciantes por time..."></textarea><button id="saveRules" class="btn primary full" type="button">Salvar regras</button></div></details>
+</div></section>
+
+<section class="page" id="page-placar"><div class="score-layout">
+<div class="panel score-panel">
+ <div class="sp-top"><div class="sp-title"><h2>Placar</h2><span class="live" id="liveBadge">● PARADO</span></div><button class="btn primary sp-match" id="startMatchMode" type="button">▶ Modo partida</button></div>
+ <div class="sp-info" id="setInfo"></div>
+ <div class="scoreboard horizontal-score" id="scoreboard"><div class="score-team"><button class="serve-btn" data-serve="A" type="button" title="Marcar saque" aria-label="Saque do time A">🏐</button><input id="scoreNameA" value="Time A" aria-label="Nome do time A"><strong id="scoreA">0</strong><div class="score-actions"><button data-score="A" data-delta="-1" aria-label="Tirar ponto">−</button><button data-score="A" data-delta="1" aria-label="Somar ponto">＋</button></div></div><div class="score-separator">×</div><div class="score-team"><button class="serve-btn" data-serve="B" type="button" title="Marcar saque" aria-label="Saque do time B">🏐</button><input id="scoreNameB" value="Time B" aria-label="Nome do time B"><strong id="scoreB">0</strong><div class="score-actions"><button data-score="B" data-delta="-1" aria-label="Tirar ponto">−</button><button data-score="B" data-delta="1" aria-label="Somar ponto">＋</button></div></div></div>
+ <div id="setHint" class="set-hint hidden"></div><div id="matchBanner" class="match-banner hidden"></div>
+ <div class="setsline">Sets <b id="setsA">0</b> × <b id="setsB">0</b></div><div id="setLog" class="set-log"></div>
+ <div class="sp-sets"><button class="btn primary" id="winSetA" type="button">Set Time A</button><button class="btn primary" id="winSetB" type="button">Set Time B</button></div>
+ <div class="sp-actions">
+  <button class="btn light" id="undoPoint" type="button" title="Desfazer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg>Desfazer</button>
+  <button class="btn light" id="swapSides" type="button" title="Trocar lados"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h15l-4-4M20 16H5l4 4"/></svg>Lados</button>
+  <button class="btn light" id="loadTeamNames" type="button" title="Usar times sorteados"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20v-1.5a6.5 6.5 0 0 1 13 0V20M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 5.5V20"/></svg>Times</button>
+  <button class="btn light" id="scoreHorizontal" type="button" title="Mudar formato do placar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/></svg>Formato</button>
+  <button class="btn light" id="saveCurrentMatch" type="button" title="Salvar partida"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h11l3 3v15H5z"/><path d="M8 3v6h8V3M8 21v-7h8v7"/></svg>Salvar</button>
+  <button class="btn light danger-text" id="resetScore" type="button" title="Zerar placar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>Zerar</button>
+ </div>
+ <details class="sp-config" id="spConfig"><summary>⚙ Configurar sets e regras</summary>
+  <div class="cfg-grid">
+   <div><label for="setTarget">Pontos por set</label><select id="setTarget"><option value="15">15</option><option value="21">21</option><option value="25" selected>25</option><option value="custom">Personalizado…</option></select><input id="setTargetCustom" type="number" min="1" max="99" inputmode="numeric" placeholder="Ex.: 18" class="hidden"></div>
+   <div><label for="bestOf">Formato da partida</label><select id="bestOf"><option value="1">Set único</option><option value="3" selected>Melhor de 3 sets</option><option value="5">Melhor de 5 sets</option></select></div>
+   <div><label for="deciderPts">Pontos do set decisivo</label><input id="deciderPts" type="number" min="0" max="99" inputmode="numeric" placeholder="0 = igual aos demais" value="15"></div>
+  </div>
+  <div class="cfg-mode"><label for="gameModeScore">Modo de jogo</label><select id="gameModeScore"><option value="amistoso">🤝 Amistoso</option><option value="bolao">🏆 Bolão</option><option value="apostado">💰 Apostado</option></select></div>
+  <label class="check"><input type="checkbox" id="advantage" checked> Exigir vantagem de 2 pontos</label>
+  <label class="check"><input type="checkbox" id="autoSet"> Registrar o set automaticamente ao fechar</label>
+ </details>
+</div>
+<div class="panel timer-panel"><h2>⏱ Cronômetro</h2><div id="timer" class="timer">00:00</div><div class="center"><button id="timerStart" class="btn primary">▶ Iniciar</button><button id="timerPause" class="btn light">Ⅱ Pausar</button><button id="timerReset" class="btn light">↺ Zerar</button></div><p class="muted center">Continua contando mesmo se você trocar de tela.</p></div></div></section>
+
+<section class="page" id="page-carteira"><div class="wallet-summary summary-cards" id="walletSummary"></div><div class="acc-list">
+<details class="acc"><summary><span class="acc-num">1</span><span class="acc-t"><b>Dados do horário</b><small>Responsável, valor total e chave Pix</small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><div class="two"><div><label>Responsável por receber</label><input id="walletOwner" placeholder="Nome do responsável"></div><div><label>Valor total do horário (R$)</label><input id="walletTotal" type="number" min="0" step=".01" inputmode="decimal" placeholder="Ex.: 120,00"></div></div>
+<label>Chave Pix (aparece na cobrança)</label><input id="walletPix" placeholder="CPF, e-mail, telefone ou chave aleatória"></div></details>
+<details class="acc"><summary><span class="acc-num">2</span><span class="acc-t"><b>Participantes e pagamentos</b><small id="accWSub2"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><form id="walletForm" class="bet-form"><div><label>Nome</label><input id="walletName" required placeholder="Nome do participante"></div><div><label>Valor (R$)</label><input id="walletValue" type="number" min="0" step=".01" placeholder="Valor individual"></div><button class="btn primary">＋ Adicionar</button></form>
+<div class="wallet-tools"><button id="walletImport" class="btn light" type="button">＋ Importar jogadores</button><button id="walletSplit" class="btn light" type="button">÷ Dividir igualmente</button><button id="walletCharge" class="btn light" type="button">📋 Copiar cobrança</button><button id="walletClear" class="btn light danger-text" type="button">Limpar</button></div>
+<div class="table-wrap"><table><thead><tr><th>Participante</th><th>Valor</th><th>Status</th><th>Forma</th><th></th></tr></thead><tbody id="walletRows"></tbody></table></div></div></details>
+</div></section>
+
+<section class="page" id="page-apostas"><div class="panel pool-top-panel"><label>Valor total do bolão (R$)<input id="poolValue" type="number" min="0" step=".01" inputmode="decimal" placeholder="Ex.: 200,00"></label></div><div class="acc-list">
+<details class="acc"><summary><span class="acc-num">1</span><span class="acc-t"><b>Times participantes</b><small id="accPSub1"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><div id="poolTeamForm" class="pool-form"><input id="poolTeamName" placeholder="Nome do time" autocomplete="off" maxlength="30"><button class="btn primary" id="poolTeamSubmit" type="button">＋ Adicionar</button></div><div id="poolTeams" class="pool-chips"></div></div></details>
+<details class="acc" open><summary><span class="acc-num">2</span><span class="acc-t"><b>Confrontos e placares</b><small id="accPSub2"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><form id="poolMatchForm" class="pool-match-form"><select id="poolMatchA" required><option value="">Time A</option></select><span>×</span><select id="poolMatchB" required><option value="">Time B</option></select><button class="btn primary" type="submit">＋ Criar confronto</button></form><p class="muted tip">Toque no time para marcar o vencedor (🏐). Se digitar o placar, o vencedor é marcado sozinho.</p><div id="poolMatches" class="pool-match-list"></div></div></details>
+<details class="acc"><summary><span class="acc-num">3</span><span class="acc-t"><b>Histórico do bolão</b><small id="accPSub3"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><div id="poolHistoryList"></div></div></details>
+</div></section>
+
+<section class="page" id="page-torneio"><div class="acc-list">
+<details class="acc"><summary><span class="acc-num">1</span><span class="acc-t"><b>Configurar chaveamento</b><small>Eliminatória simples</small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><label>Times participantes</label><select id="bracketCount"><option>2</option><option>4</option><option>8</option><option>16</option></select><button id="createBracket" class="btn primary full" type="button">Gerar chaveamento</button></div></details>
+</div><div class="panel" style="margin-top:14px"><div id="bracket" class="bracket"></div><div class="champion" id="champion"></div></div></section>
+
+<section class="page" id="page-quadra"><div class="panel court-panel">
+ <div id="courtEmpty" class="empty hidden">Monte os times primeiro para ver as posições na quadra.<br><button class="btn primary" type="button" onclick="goPage('montar')" style="margin-top:12px">Ir para Montar times</button></div>
+ <div id="courtMain">
+  <div id="courtTeams" class="court-chips"></div>
+  <div class="court-opts">
+   <div><label for="courtSystem">Sistema de jogo</label><select id="courtSystem"><option value="auto">Automático</option><option value="5x1">5x1 (1 levantador)</option><option value="4x2">4x2 (2 levantadores)</option><option value="livre">Livre (sem especialização)</option></select></div>
+   <label class="check"><input type="checkbox" id="courtLibero" checked> Líbero entra no lugar do central no fundo</label>
+  </div>
+  <div id="courtView" class="court-view"></div>
+  <div class="court-controls"><button class="btn light" id="rotBack" type="button">↺ Voltar</button><div class="rot-label"><b id="rotNum">Rotação 1</b><span id="rotInfo"></span></div><button class="btn primary" id="rotNext" type="button">Rodar ↻</button></div>
+  <div id="courtInfo" class="court-info"></div>
+  <div class="court-legend"><span><i style="background:#f5b301"></i>Levantador</span><span><i style="background:#2f6df6"></i>Ponteiro</span><span><i style="background:#14a46c"></i>Central</span><span><i style="background:#e5484d"></i>Oposto</span><span><i style="background:#d946ef"></i>Líbero</span><span><i style="background:#64748b"></i>Outra</span></div>
+  <h3 class="court-h">Banco de reservas</h3><p class="muted tip">Toque em um jogador da quadra e depois em um reserva (ou em outro jogador) para substituir/trocar de lugar.</p>
+  <div id="courtBench" class="court-bench"></div>
+  <label class="check"><input type="checkbox" id="autoRot"> Girar automaticamente quando o time recuperar o saque no placar</label>
+  <div class="court-actions"><button class="btn light" id="courtReset" type="button">⟲ Reorganizar posições</button></div>
+  <details class="court-all"><summary>Ver as 6 rotações</summary><div id="courtAll" class="court-all-grid"></div></details>
+ </div>
+</div></section>
+<section class="page" id="page-sorteio"><div class="acc-list"><details class="acc" id="accDraw" open><summary><span class="acc-num">1</span><span class="acc-t"><b>Times e formato</b><small id="accDSub1"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><label for="drawCount">Quantidade de times</label><select id="drawCount"><option value="2">2 times</option><option value="3">3 times</option><option value="4" selected>4 times</option><option value="5">5 times</option><option value="6">6 times</option><option value="7">7 times</option><option value="8">8 times</option><option value="9">9 times</option><option value="10">10 times</option><option value="11">11 times</option><option value="12">12 times</option><option value="13">13 times</option><option value="14">14 times</option><option value="15">15 times</option><option value="16">16 times</option></select>
+<label>Formato do sorteio</label><div class="seg wide" id="drawModeSeg"><button type="button" data-dm="pares" class="active">Confrontos</button><button type="button" data-dm="todos">Todos contra todos</button></div><p class="muted tip" id="drawModeHelp"></p>
+<label>Nomes dos times (opcional)</label><div id="drawNames" class="draw-names"></div>
+<button id="drawImport" class="btn light full" type="button">Usar meus times sorteados</button></div></details></div>
+<button id="drawGo" class="btn primary full draw-go" type="button">🎲 Sortear jogos</button>
+<div id="drawRoll" class="draw-roll" hidden><span id="drawRollNum">?</span><small>Sorteando…</small></div>
+<div id="drawOut"></div></section>
+<section class="page" id="page-cores"><div class="panel"><h2>Personalizar cores</h2><p class="muted">Escolha uma cor para identificar cada equipe.</p><div id="colorSettings" class="color-settings"></div><button id="saveColors" class="btn primary">Aplicar cores</button></div></section>
+
+<section class="page" id="page-historico"><div class="acc-list">
+<details class="acc"><summary><span class="acc-num">1</span><span class="acc-t"><b>Filtrar por dia e modo</b><small id="accHSub1"></small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><div class="two"><div><label for="histDate">Dia</label><input type="date" id="histDate"></div><div><label for="histMode">Modo de jogo</label><select id="histMode"><option value="todos">Todos</option><option value="amistoso">Amistoso</option><option value="bolao">Bolão</option><option value="apostado">Apostado</option></select></div></div><div class="hist-quick"><button class="btn light mini" id="histToday" type="button">Hoje</button><button class="btn light mini" id="histAll" type="button">Ver tudo</button></div></div></details>
+</div><div class="history-actions"><button class="btn primary" id="saveMatch" type="button">＋ Salvar partida atual</button><button class="btn light danger-text" id="clearHistory" type="button">Limpar</button></div><div id="historyStats" class="history-stats"></div><div id="historyList" class="history-list"></div></section>
+<section class="page" id="page-exportar"><div class="acc-list">
+<details class="acc" open><summary><span class="acc-num">1</span><span class="acc-t"><b>Compartilhar os times</b><small>Imagem, texto ou PDF da escalação</small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><div class="export-actions"><button id="shareImage" class="btn primary">📸 Compartilhar imagem</button><button id="exportImage" class="btn light">⬇ Baixar imagem</button><button id="shareWhats" class="btn light">💬 WhatsApp (texto)</button><button id="shareText" class="btn light">📋 Copiar texto</button><button id="exportPdf" class="btn light">📄 PDF</button></div><div id="exportPreview" class="export-preview"><div class="empty">Monte os times na página inicial para gerar sua escalação.</div></div></div></details>
+<details class="acc"><summary><span class="acc-num">2</span><span class="acc-t"><b>Backup dos dados</b><small>Salvar e restaurar tudo</small></span><span class="acc-chev" aria-hidden="true">⌄</span></summary><div class="acc-body"><p class="muted">Seus dados ficam só neste aparelho. Baixe um backup para não perdê-los ou para levar a outro celular.</p><div class="export-actions"><button id="backupDownload" class="btn light">💾 Baixar backup</button><button id="backupRestore" class="btn light">📂 Restaurar backup</button><input type="file" id="backupFile" accept="application/json,.json" hidden></div></div></details>
+</div></section>
+</main></div>
+<dialog id="editDialog"><form method="dialog" id="editForm"><h2>Editar jogador</h2>
+<label>Nome</label><input id="editName" required maxlength="50">
+<div class="two"><div><label>Gênero</label><select id="editGender"><option>Feminino</option><option>Masculino</option><option>Outro</option></select></div>
+<div><label>Posição</label><select id="editPos"><option>Levantador</option><option>Ponteiro</option><option>Central</option><option>Oposto</option><option>Líbero</option><option>Outra</option></select></div></div>
+<label>Nível</label><select id="editLevel"><option value="1">★ Iniciante</option><option value="2">★★ Básico</option><option value="3">★★★ Intermediário</option><option value="4">★★★★ Avançado</option><option value="5">★★★★★ Craque</option></select>
+<div class="dialog-actions"><button class="btn light" value="cancel" type="button" id="editCancel">Cancelar</button><button class="btn primary" value="ok">Salvar</button></div></form></dialog>
+<div id="matchView" class="mv" hidden aria-label="Placar em tela cheia">
+<div class="mv-stage" id="mvStage">
+ <div class="mv-top">
+  <button class="mv-btn" id="mvExit" type="button">✕ Sair</button>
+  <div class="mv-clock"><button class="mv-btn sm" id="mvTimerToggle" type="button" aria-label="Iniciar ou pausar cronômetro">▶</button><span class="mv-timer" id="mvTimer">00:00</span><button class="mv-btn sm" id="mvTimerReset" type="button" aria-label="Zerar cronômetro">↺</button></div>
+  <div class="mv-top-right"><button class="mv-btn" id="mvFs" type="button">⛶ Tela cheia</button><button class="mv-btn" id="mvRotate" type="button">⟳ Girar</button></div>
+ </div>
+ <div class="mv-board">
+  <div class="mv-team a" id="mvTeamA" role="button" tabindex="0" aria-label="Ponto para o time A"><button class="mv-serve" id="mvServeA" type="button" aria-label="Saque do time A">🏐</button><div class="mv-name" id="mvNameA">Time A</div><div class="mv-score" id="mvScoreA">0</div><button class="mv-minus" id="mvMinusA" type="button" aria-label="Tirar ponto">−</button><div class="mv-taphint">toque para +1</div></div>
+  <div class="mv-mid"><div class="mv-setinfo" id="mvSetInfo"></div><div class="mv-sets"><b id="mvSetsA">0</b><span>SETS</span><b id="mvSetsB">0</b></div><div class="mv-hint" id="mvHint"></div></div>
+  <div class="mv-team b" id="mvTeamB" role="button" tabindex="0" aria-label="Ponto para o time B"><button class="mv-serve" id="mvServeB" type="button" aria-label="Saque do time B">🏐</button><div class="mv-name" id="mvNameB">Time B</div><div class="mv-score" id="mvScoreB">0</div><button class="mv-minus" id="mvMinusB" type="button" aria-label="Tirar ponto">−</button><div class="mv-taphint">toque para +1</div></div>
+ </div>
+ <div class="mv-bottom">
+  <button class="mv-btn" id="mvUndo" type="button">↶ Desfazer</button>
+  <button class="mv-btn strong" id="mvSetA" type="button">Set A</button>
+  <button class="mv-btn" id="mvSwap" type="button">⇄ Lados</button>
+  <button class="mv-btn strong" id="mvSetB" type="button">Set B</button>
+  <button class="mv-btn" id="mvSave" type="button">💾 Salvar</button>
+ </div>
+</div></div>
+<nav class="tabbar" id="tabbar" aria-label="Atalhos"><button data-tab="inicio" type="button"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9M9 21v-7h6v7"/></svg><span>Início</span></button><button data-tab="montar" type="button"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/></svg><span>Times</span></button><button data-tab="placar" type="button"><svg viewBox="0 0 24 24"><path d="M4 20V4M4 20h17"/><rect x="7" y="12" width="3" height="6" rx="1"/><rect x="13" y="8" width="3" height="10" rx="1"/><rect x="19" y="5" width="3" height="13" rx="1"/></svg><span>Placar</span></button><button data-tab="historico" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Histórico</span></button><button data-tab="menu" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button></nav>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script><script>if("serviceWorker" in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{});function toggleHomeMore(){const grid=document.getElementById('homeMenuGrid');const btn=document.getElementById('homeShowMore');const expanded=grid.classList.toggle('show-extra');btn.setAttribute('aria-expanded',expanded?'true':'false');btn.textContent=expanded?'− Mostrar menos':'＋ Mostrar mais opções';}</script>
+</body></html>
